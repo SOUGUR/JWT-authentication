@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* Light background color */
+            color: #333; /* Dark text color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+            margin: 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em; /* Larger font size */
+            color: #4CAF50; /* Green color */
+            margin-bottom: 20px;
+            transition: transform 0.3s; /* Smooth transition for hover effect */
+        }
+
+        h1:hover {
+            transform: scale(1.1); /* Scale effect on hover */
+        }
+
+        p {
+            font-size: 1.2em; /* Slightly larger font for the paragraph */
+            color: #555; /* Darker gray for the paragraph */
+        }
+
+        .container {
+            padding: 20px;
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            background-color: white; /* White background for the container */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome, {{ user }}!</h1>
+        <p>You are viewing a protected page by JWT authentication!</p>
+    </div>
+</body>
+</html>
